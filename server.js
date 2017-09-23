@@ -1,15 +1,13 @@
 const path = require('path');
 const express = require('express');
-const bodyParser = require('body-parser');
+
 const exphbs = require('express-handlebars');
 const app = express();
 const PORT = 8080;
 
 
 
-const app = express();
-const PORT = 3000;
-
+//handlebars engine stuff
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 

@@ -9,7 +9,7 @@ const Employee = sequelizeConnect.define('employee', {
     },
     first_name:Sequelize.STRING,
     last_name: Sequelize.STRING,
-    pay_rate: Sequelize.INTEGER
+    pay_rate: Sequelize.DECIMAL
 },
 {
     timestamps:false
